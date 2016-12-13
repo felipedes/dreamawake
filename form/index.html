@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pequeño ejemplo de un formulario simple!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="main-contain">
+		<div class="cont-form">
+			<form class="formulario">
+				<h2 class="form-header-title">Inscribete ahora para recibír Ofertas</h2>
+				<div class="cont-input">
+					<label for="txt_nombre">Ingrese su Nombre y Apellido</label>
+					<input id="txt_nombre" placeholder="Ej: Pedrito Ramirez" type="text">					
+				</div>
+				<div class="cont-input">
+					<label for="txt_apellido">Ingrese su Rut</label>
+					<input id="txt_rut" maxlength="12" placeholder="Ej: 15123431-4" type="text">					
+				</div>
+				<div class="cont-input">
+					<label for="txt_email">Ingrese su E-mail</label>
+					<input id="txt_email" placeholder="Ej: pedro.ramirez@gmail.com" type="text">					
+				</div>
+				<div class="cont-radio">
+					<label><a href="https://google.cl" class="cond-uso" target="_blank">¿Acepta las condiciones?, Leer condiciones.</a></label>
+					<div class="area-radio">
+						<input type="radio" value="si_a" name="cond" id="rad_si">Si Acepto
+						<input type="radio" value="no_a" name="cond" id="rad_no">No Acepto					
+					</div>
+				</div>
+				<a href="javascript:void(0)" class="enviar" id="btn_send">Enviar</a>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.rut.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

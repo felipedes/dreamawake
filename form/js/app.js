@@ -2,6 +2,16 @@ var App = {
 
 	validaciones: function(){
 
+		// validaciones  del formulario
+		var alerta = $('.alert-desc'),
+			btnok = $('.ok');
+
+		btnok.on('click', function(){
+			alerta.fadeOut('slow/400/fast', function() {
+				alerta.remove();
+			});
+		});
+
 		//variables inputs
 		var txt_nombre = $('#txt_nombre'),
 			txt_rut = $('#txt_rut'),

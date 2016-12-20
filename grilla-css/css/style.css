@@ -155,7 +155,58 @@ a.logo {
 	    font-family: arial;
 	}
 
+.alert-desc {
+	background-color: rgba(0,0,0,0.78);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+	.cuadro-text {
+	    background-color: white;
+	    border-radius: 15px;
+	    margin: 160px auto;
+	    width: 40%;
+	}
+
+		h2.alert-text {
+		    color: #424242;
+		    font-family: arial;
+		    font-size: 22px;
+		    margin: 0;
+		    padding: 22px 25px;
+		}
+
+		button.ok {
+		    background: white;
+		    border: 0;
+		    border-radius: 0px 0px 15px 15px;
+		    border-top: solid 1px #a7a5a5;
+		    color: rgba(2,123,255,0.58);
+		    cursor: pointer;
+		    display: block;
+		    font-size: 16px;
+		    font-weight: bold;
+		    margin: 0 auto;
+		    outline: none;
+		    width: 100%;
+		    height: 60px;
+		}
+		button.ok:hover {
+			background-color: #f3f3f3;
+		}
+
 /* responsive */
+
+@media screen and (max-width: 865px) {
+
+	.cuadro-text {
+	    width: 80%;
+	}
+
+}
 
 @media screen and (max-width: 620px) {
 

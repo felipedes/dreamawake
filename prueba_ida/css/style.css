@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial; }
+  body section#wrapper {
+    background-color: #f7fdbb;
+    padding: 25px 0; }
+    body section#wrapper h2 {
+      text-align: center; }
+    body section#wrapper form.formulario {
+      background-color: #cdffcc;
+      box-shadow: 0px 10px 30px 0px #a4c3a3;
+      margin: 0 auto;
+      padding: 20px 25px 20px 15px;
+      width: 50%; }
+      @media screen and (max-width: 687px) {
+        body section#wrapper form.formulario {
+          width: 85%; } }
+      body section#wrapper form.formulario label {
+        display: block;
+        padding: 15px 0 5px; }
+      body section#wrapper form.formulario input[type="text"] {
+        padding: 10px 0;
+        text-indent: 10px;
+        width: 100%; }
+      body section#wrapper form.formulario textarea {
+        padding: 10px 0;
+        resize: none;
+        text-indent: 10px;
+        width: 100%; }
+      body section#wrapper form.formulario a#enviar {
+        background-color: #75ff72;
+        display: block;
+        color: #000;
+        cursor: pointer;
+        margin: 20px 0;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+        width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

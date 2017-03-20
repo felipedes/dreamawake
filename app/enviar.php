@@ -78,14 +78,14 @@ if($_POST) {
 	$cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
 	// Cabeceras adicionales
-	$cabeceras .= 'To: Lead Tronwell.com <'.$mail_destino.'>,<christian.hahn@tronwell.com>,<felipe.farias@elliving.cl>' . "\r\n";
-	$cabeceras .= 'From: Notificación Lead de Página Web <marketing@tronwell.com>' . "\r\n";
-	$cabeceras .= 'Cc: medios.tronwell@gmail.com,test@tronwell.com,marketing@tronwell.com,christian.hahn@tronwell.com' . "\r\n";
+	$cabeceras .= 'To: Lead misitio.com <'.$mail_destino.'>,<email@test.cl>' . "\r\n";
+	$cabeceras .= 'From: Notificación Lead de Página Web <email@test.cl>' . "\r\n";
+	$cabeceras .= 'Cc: email@test.cl' . "\r\n";
 
 	// Varios destinatarios
-	// $para = 'mkting.uniacc@gmail.com';
+	// $para = 'email@test.clm';
 	// $para  = '' . ', felipe.desarrollo30@gmail.com'; // atención a la coma
-	$para .= 'marketing@tronwell.com';
+	$para .= 'email@test.cl';
 
 	// título
 	$titulo = 'Lead Tronwell.com';
@@ -95,7 +95,7 @@ if($_POST) {
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	  <title>Mensaje enviado Desde El sitio de Tronwell</title>
+	  <title>Mensaje enviado Desde El sitio web</title>
 	</head>
 	<body>
 	  <p>Información del cliente</p>
@@ -130,7 +130,7 @@ if($_POST) {
 	if(name_ok == true && email_ok == true && tele_ok == true && sede_ok == true && comment_ok == true) {
 
 		// consulta para insertar nuestros datos a la bd
-		$sql = "INSERT INTO clientes_web (nombre, email, telefono, rut, sede, supo, comentarios)
+		$sql = "INSERT INTO mitabla (nombre, email, telefono, rut, sede, supo, comentarios)
 				VALUES ('$name','$email','$tele','$rut','$sede','$supo','$comment')";
 
 		// chequeamos que la consulta este bien ingresada

@@ -4,7 +4,7 @@
 //ini_set('display_errors', 1);
 
 $name_home = "Felipe";
-$email_home = "felipe.farias@elliving.cl";
+$email_home = "felipe.farias@gmail.cl";
 $tele_home = "+569-42132914";
 $rut_home = "18356477-3";
 $sede_home = "Santiago-Centro";

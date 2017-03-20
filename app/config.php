@@ -4,13 +4,13 @@
 // $server = "localhost";
 // $usuario = "root";
 // $password = "";
-// $bd = "tronwell";
+// $bd = "mibase";
 
 // Producción
 $server = "localhost";
-$usuario = "tronwell_2017";
-$password = "tronwell2017@";
-$bd = "tronwell_2017";
+$usuario = "user";
+$password = "pass";
+$bd = "mibasehost";
 
 //abrimos conexión
 $conexion = new mysqli($server,$usuario,$password,$bd);
